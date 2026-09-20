@@ -1,15 +1,13 @@
-================================================================================
-WUKAH'S CUSTOM LICENSE AGREEMENT V1.0
-================================================================================
+# WUKAH'S CUSTOM LICENSE AGREEMENT V1.0
 
 This product is protected by EU and International copyright laws. All parodies, 
 graphics, artwork, code, assets, and sounds contained herein are protected under 
 Italian Copyright Law (Law 22 April 1941, n. 633) and European Legislation 
 unless otherwise stated.
 
-# TERMS OF USE AND LICENSE CONDITIONS:
+## TERMS OF USE AND LICENSE CONDITIONS:
 
-## 1. PERMITTED USES (WHAT YOU CAN DO):
+### 1. PERMITTED USES (WHAT YOU CAN DO):
 - PERSONAL USE: You may modify the code of your local copy of the product solely for 
   personal use, interoperability, or creating private quality-of-life adjustments.
 - EXTENSIONS: You are permitted to distribute original code extensions or add-ons 
@@ -36,7 +34,7 @@ unless otherwise stated.
 - OTHER EXCEPTIONS: Certain citizens in certain jurisdictions may have additional 
   exceptions to copyright laws that are not stated above.
 
-## 2. RESTRICTIONS (WHAT YOU CANNOT DO):
+### 2. RESTRICTIONS (WHAT YOU CANNOT DO):
 - NO UNAUTHORIZED REDISTRIBUTION: Except as expressly permitted in Section 1 (Digital 
   Archiving), you may not re-upload, redistribute, or mirror this product (in its original, 
   modified, or partial form) on any public platform, website, or repository 
@@ -45,7 +43,7 @@ unless otherwise stated.
   or its assets for any commercial purpose, monetary gain, or behind any paywalls 
   (including but not limited to direct sales, paid subscriptions, or donation-backed access).
 
-## 3. ABANDONMENT CLAUSE:
+### 3. ABANDONMENT CLAUSE:
 If this product is officially declared abandoned by the author, or if the author 
 remains completely unreachable and fails to release critical compatibility updates 
 for a continuous period of two (2) years following a breaking product or platform update, 
@@ -53,7 +51,7 @@ the community is granted a limited, revocable license to fork, patch, and redist
 updated versions of this product solely to maintain compatibility, provided that 
 the original authorship of Wildlukah (Wukah) remains clearly credited.
 
-## 4. DISCLAIMER OF LIABILITY (NO WARRANTY):
+### 4. DISCLAIMER OF LIABILITY (NO WARRANTY):
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDER "AS IS" AND ANY EXPRESS OR 
 IMPLIED WARRANTIES ARE DISCLAIMED. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR 
 ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES 
