@@ -1,0 +1,178 @@
+// Unused events will be put there
+// They might be implemented or finished later
+
+/* 
+
+// Adding 'PlaySystemAact'
+// -----------------------------------------------------------
+
+var eventId6 = "PlaySystemAact";
+
+var myRandomEvent = {
+	id: eventId6,
+	isRandomEvent: false,
+	date: "33/1/4",
+	maxTriggers: 1,
+	trigger: function (company) {
+		return company.currentLevel >= 3 && company.gameLog.length >= 25;
+	},
+	getNotification: function (company) {
+
+		var msg = "After more than 20 years from it's cancellation, a prototype of the Ninvento PlaySystem was found. This console, made by Ninvento and Vonny thanks to a market patnership back in the 90s, would be the first console in the world that used CD-ROM media. But unfortunately, this platform has never seen the sunlight. {n} This prototype will be auctioned next February, at a starting price of 15,000$. but the auction could quickly exceed to $350,000 within days! {n} Our company is very famous for the collection of video game consoles, counting over 40 platforms. We suggest you to buy this piece of history, so we ask you. Would you be interested in paying a whopping $500,000 to buy this piece of videogaming history?";
+
+		return new Notification({
+			sourceId: eventId6,
+			header: "Industry News".localize(),
+			text: msg,
+			image: The_Top_And_Flops_Mod_WildLukah.modPath + "/images/events/Playsystem.png",
+			options: ["Just take my money!", "No, thanks."]
+		});
+	},
+	complete: function (decision) {
+
+
+		var company = GameManager.company;
+        var companyname = GameManager.company.name;
+        var staff = company.staff.skip(1).pickRandom();
+            staff.name;
+			
+		if (decision === 0) {
+			
+			var n = new Notification({
+				header: "Industry News".localize(),
+				text: "We just discovered {0} just bought the latest prototype of the Ninvento PlaySystem that was auctioned last week for 500,000$. {n} So, {1}, one of their employers, had to say this: 'A month ago we discovered that Ninvento's PlaySystem, a piece of history for our industry, would be put up for auction.' {n} 'After some hesitation, we are happy to announce that we have won the auction. This prototype will be placed in our museum and any fan can easily go here to see it live.'".localize().format(companyname, staff.name),
+				weeksUntilFired: 1 + 2 * company.getRandom()
+			});
+			n.adjustCash(-500000, "Playsystem");
+			company.notifications.push(n);
+			return;
+		}
+		if (decision === 1) {
+
+			var n = new Notification({
+				header: "Industry News".localize(),
+				text: "Recently, the Ninvento PlaySystem was auctioned and was sold for 360,000$. The fan who bought this piece of history decided to display it in his large video game console museum.",
+				weeksUntilFired: 1 + 2 * company.getRandom()
+			});
+			company.notifications.push(n);
+			return;
+		}
+	}
+};
+
+GDT.addEvent(myRandomEvent);
+
+
+// Adding 'IperLawsuit'
+// -----------------------------------------------------------
+
+var eventId7 = "IperLawsuit";
+
+var myRandomEvent = {
+	id: eventId7,
+	isRandomEvent: true,
+	maxTriggers: 1,
+	trigger: function (company) {
+		return company.currentLevel >= 3 && company.isGameProgressBetween(0.4, 0.9);
+	},
+	getNotification: function (company) {
+		var game = company.currentGame;
+        var staff = company.staff.skip(1).pickRandom();
+            staff.name;
+		var msg = "We just discovered that Iper MegaGames, one of our biggest rivals in the videogame market, are making a new title, very similar to our game, {0}. {n} Even worse, they've been working on this game for months, even much longer than us. Comparing it to our game, we found that their game is too similar to ours! {n} But fortunately, we have an advantage, in fact our legal team put a copyright on our game, we can sue them and take down their game. This would give us favor in the market, but some fans might hate this idea. What should we do?"
+			.localize().format(game.title);
+
+		return new Notification({
+			sourceId: eventId7,
+			header: staff.name,
+			text: msg,
+			options: ["Sue 'em!", "Sounds unfair, tbh."]
+		});
+	},
+	complete: function (decision) {
+
+		var company = GameManager.company;
+		var game = company.currentGame;
+		var companyname = GameManager.company.name;
+		
+		if (decision === 0) {
+
+			var n = new Notification({
+				header: "Industry News".localize(),
+				text: "We discovered {0} just sued Iper MegaGames for 1,200,000$. They claimed they stolen code from their new game, {1}. {n} In the end, you won the lawsuit and Iper MegaGames had to cancel their game, but many fans weren't happy about this."
+				.localize().format(companyname, game.title),
+				
+				weeksUntilFired: 1 + 2 * company.getRandom()
+			});
+			n.adjustCash(600000, "Lawsuit");
+			n.adjustFans((company.fans / 10) * -1);
+			n.adjustHype(15 + 25 * company.getRandom());
+			company.notifications.push(n);
+			return;
+		}
+		if (decision === 1) {
+
+			return;
+		}
+	}
+};
+
+GDT.addEvent(myRandomEvent);
+
+// Adding 'rrr'
+// -----------------------------------------------------------
+
+var eventId8 = "rrrr";
+
+var myRandomEvent = {
+	id: eventId8,
+	isRandomEvent: false,
+	maxTriggers: 1,
+	trigger: function (company) {
+		return company.currentLevel >= 1 && company.isGameProgressBetween(0.4, 0.7);
+	},
+	getNotification: function (company) {
+        var game = company.currentGame;
+		
+		var msg = "Boss, It happened again. Hackers gained access to our servers and obtained a copy of our unfinished game, {0}. They are now threatening to release our entire project online! This could create a negative impression among our fans, especially since the game is still unfinished. We stand to lose a significant amount of money. {n} What makes this situation crazier is that these hackers are actually Ninvento fans who are challenging us to draw a perfectly shaped Kirbee, one of Ninvento's mascots, using only our hands and painting, no tools or apps allowed. They claim that if we won, they won't release our game online. {n} This seem like a ridiculous challenge, considering they have half a million dollars' worth of files in their hands, and they are clearly underestimating the talent of our artists. On the other hand, this could also be an opportunity to gain attention from fans worldwide. Alternatively, we could focus on tracking them down and bringing them to justice, but there’s a chance they might strike again in the future. The choice is yours."
+			.localize().format(game.title);
+		return new Notification({
+			sourceId: eventId8,
+			header: "Industry News".localize(),
+			text: msg,
+			image: The_Top_And_Flops_Mod_WildLukah.modPath + "/images/events/Playsystem.png",
+			options: ["Deal.", "Eww, what kind of challenge is this?"]
+		});
+	},
+	complete: function (decision) {
+		
+	    var company = GameManager.company;
+        var companyname = GameManager.company.name;
+		var game = company.currentGame;
+		if (decision === 0) {
+			
+			var n = new Notification({
+				header: "Industry News".localize(),
+				text: "Recently, {0} got involved in a massive hacking, where their new game, {1}, got leaked online. The hackers, who where recently arrested by FBI, decided to challenge their biggest artists to draw perfectly shaped Kirbee, so they wouldn't release the copy on the internet. {n} {0}'s CEO accepted, and their artists literally made a masterpiece. The hackers deleted {1}'s game files, but this couldn't save them from a lawsuit by {0}'s Legal Department. {n} This entire drama was funny for many fans, who made internet memes about this happening. Many claim that while most companies would just refuse this challenge and sue them directly, {0} decided to deal with them differently. {n} A fan had to say this: '{0} is the funniest videogame company ever, they care about their fans and try to joke and play with them. I saw the leaks of {1} too, and I think that it's not a bad game at all!'. We just wait for this game to release."
+				.localize().format(companyname, game.title),
+				weeksUntilFired: 1 + 2 * company.getRandom()
+			});
+			n.adjustHype(15 + 75 * company.getRandom());
+			n.adjustCash(1000000, "Lawsuit");
+			company.notifications.push(n);
+			return;
+		}
+		if (decision === 1) {
+
+			var n = new Notification({
+				header: "Industry News".localize(),
+				text: "Recently, the Ninvento PlaySystem was auctioned and was sold for 360,000$. The fan who bought this piece of history decided to display it in his large video game console museum.",
+				weeksUntilFired: 1 + 2 * company.getRandom()
+			});
+			company.notifications.push(n);
+			return;
+		}
+	}
+};
+
+GDT.addEvent(myRandomEvent); */

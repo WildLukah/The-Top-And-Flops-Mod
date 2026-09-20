@@ -1,0 +1,2 @@
+HOW TO INSTALL:
+Go to the folder of your copy of Game Dev Tycoon (if using Steam: right-click the game ---> Properties ---> Local Files ---> Browse) and simply place the mod into the "mods" folder. Then launch the game, enable TT&FM, and restart the game. Enjoy!

@@ -1,0 +1,13 @@
+{
+    "id": "The_Top_And_Flops_Mod_WildLukah_191",
+    "name": "The Top And Flops Mod [1.9.5]",
+    "version": "1.9.5",
+    "author": "WildLukah",
+    "url": "",
+    "description": "Discover the successes and failures of the gaming industry on GDT through the Top And Flops Mod! This mod aims to give Game Dev Tycoon a new life while keeping its spirit alive. Features Up to 105 new consoles to expand your Game Dev Tycoon experience; 70 ",
+    "main": "./main.js",
+    "dependencies": {
+        "gdt-modAPI": "0.1.x"
+    },
+    "image": "TT&FM-1.9.0-Thumbnail-Thumbnail.png"
+}
