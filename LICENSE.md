@@ -35,8 +35,8 @@ unless otherwise stated.
   exceptions to copyright laws that are not stated above.
 
 ### 2. RESTRICTIONS (WHAT YOU CANNOT DO):
-- NO UNAUTHORIZED REDISTRIBUTION: Except as expressly permitted in Section 1 (Digital 
-  Archiving), you may not re-upload, redistribute, or mirror this product (in its original, 
+- NO UNAUTHORIZED REDISTRIBUTION: Except as expressly permitted in Section 1 (PERMITTED USES),
+  you may not re-upload, redistribute, or mirror this product (in its original, 
   modified, or partial form) on any public platform, website, or repository 
   without express written permission from the author.
 - NO COMMERCIAL USE: You may not use, distribute, or exploit this product, its code, 
