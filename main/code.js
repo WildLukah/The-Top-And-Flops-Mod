@@ -9409,7 +9409,7 @@ Reviews.getGenericReviewMessage = function(a, b) {
 		return originalReviews[1].concat(["Shouldn't be allowed for retail.".localize(), "Waste of resources.".localize(), "Simply painful.".localize(), "My new worst.".localize(), "A joke game.".localize(), "Avoid at all costs!".localize(), "Never develop again!".localize()]).pickRandom();
     }
     if (2 === b) {
-		return originalReviews[2].concat(["Unplayable!".localize(), "Burning money is less wasteful than buying this.".localize(), "Did somebody say 'Ugly'?".localize(), "Makes me throw up.".localize(), "Throwed it in dumpster.".localize(), "Avoid.".localize()]).pickRandom();
+		return originalReviews[2].concat(["Unplayable!".localize(), "Burning money is less wasteful than buying this.".localize(), "Did somebody say 'Ugly'?".localize(), "Makes me throw up.".localize(), "Threw it in dumpster.".localize(), "Avoid.".localize()]).pickRandom();
     }
     if (3 === b) {
         return originalReviews[3].concat(["Should be free.".localize(), "Should be avoided.".localize(), "Inept.".localize()]).pickRandom();
